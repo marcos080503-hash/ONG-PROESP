@@ -1,25 +1,206 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
 
-<header>
+<head>
+    <!-- Configurações básicas da página -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <!-- Logo da PROESP -->
-    <div class="logo">
-        <img src="assets/logo-proesp.jpg" alt="Logo da PROESP">
-    </div>
+    <!-- Título exibido na aba do navegador -->
+    <title>Ações | PROESP Campinas</title>
 
+    <!-- Arquivo responsável pela aparência do site -->
+    <link rel="stylesheet" href="styles.css">
+</head>
 
-    <!-- Botão para abrir o menu em telas menores, como celulares -->
-    <button class="menu-toggle" aria-label="Abrir menu">
-        ☰
-    </button>
+<body>
 
+    <!-- CABEÇALHO DO SITE -->
+    <!-- Apresenta a identidade da PROESP e o menu de navegação -->
+    <header class="site-header">
 
-    <!-- Menu com links para as páginas do site -->
-    <nav>
-        <a href="index.html">Início</a>
-        <a href="sobre.html">Quem Somos</a>
-        <a href="atuacao.html">Atuação</a>
-        <a href="acoes.html">Ações</a>
-        <a href="contato.html">Contato</a>
-    </nav>
+        <!-- Logo e nome da associação -->
+        <a class="brand" href="index.html">
+            <img src="assets/logo-proesp.jpg" alt="Símbolo da PROESP">
 
-</header>
+            <span>
+                PROESP
+                <small>Campinas · SP</small>
+            </span>
+        </a>
+
+        <!-- Botão para abrir o menu em telas menores -->
+        <button class="menu-toggle" aria-label="Abrir menu" aria-expanded="false">
+            ☰
+        </button>
+
+        <!-- Links para as páginas do site -->
+        <nav class="nav">
+            <a href="index.html">Início</a>
+            <a href="sobre.html">Quem somos</a>
+            <a href="atuacao.html">Atuação</a>
+            <a class="active" href="acoes.html">Ações</a>
+            <a class="nav-cta" href="contato.html">Contato</a>
+        </nav>
+
+    </header>
+
+    <!-- CONTEÚDO PRINCIPAL DA PÁGINA -->
+    <main>
+
+        <!-- Apresentação da página de ações -->
+        <section class="page-hero">
+            <p class="eyebrow">AÇÕES E INICIATIVAS</p>
+
+            <h1>Ideias que viram mobilização.</h1>
+
+            <p class="lead">
+                Registros de atividades, campanhas e encontros presentes nas publicações da PROESP.
+            </p>
+        </section>
+
+        <!-- SEÇÃO COM OS REGISTROS DE AÇÕES -->
+        <section class="section">
+
+            <!-- Título da seção -->
+            <div class="section-heading">
+                <div>
+                    <p class="eyebrow">EM MOVIMENTO</p>
+
+                    <h2>Conhecimento, participação e cuidado.</h2>
+                </div>
+            </div>
+
+            <!-- Cartões com exemplos de ações e iniciativas ambientais -->
+            <div class="story-grid">
+
+                <!-- Primeiro cartão: plantio e preservação de áreas verdes -->
+                <article class="story-card">
+                    <img
+                        src="assets/plantio-mudas.jpg"
+                        alt="Registro de plantio de mudas"
+                    >
+
+                    <div>
+                        <span class="tag">Ação ambiental</span>
+
+                        <h3>Plantio e cuidado com áreas verdes</h3>
+
+                        <p>
+                            Atividades de plantio e mobilização em torno da vegetação
+                            e da recuperação ambiental.
+                        </p>
+                    </div>
+                </article>
+
+                <!-- Segundo cartão: educação ambiental -->
+                <article class="story-card">
+                    <img
+                        src="assets/acoes-ambientais.jpg"
+                        alt="Publicação sobre temas ambientais"
+                    >
+
+                    <div>
+                        <span class="tag">Educação</span>
+
+                        <h3>Encontros e oficinas</h3>
+
+                        <p>
+                            Compartilhamento de conhecimentos e iniciativas de educação ambiental.
+                        </p>
+                    </div>
+                </article>
+
+                <!-- Terceiro cartão: campanhas e mobilização social -->
+                <article class="story-card">
+                    <img
+                        src="assets/mobilizacao.jpg"
+                        alt="Publicação de mobilização social"
+                    >
+
+                    <div>
+                        <span class="tag">Participação social</span>
+
+                        <h3>Campanhas e mobilizações</h3>
+
+                        <p>
+                            Divulgação de debates e ações públicas em defesa de causas ambientais.
+                        </p>
+                    </div>
+                </article>
+
+            </div>
+
+            <!-- Aviso sobre o conteúdo apresentado nos cartões -->
+            <p class="note">
+                Os cards apresentam temas identificados nas imagens do perfil enviado.
+                Não representam uma agenda atualizada de eventos.
+            </p>
+
+        </section>
+
+        <!-- CHAMADA PARA CONSULTAR AS PUBLICAÇÕES OFICIAIS -->
+        <section class="callout section">
+
+            <div>
+                <p class="eyebrow">ATUALIZAÇÕES</p>
+
+                <h2>Quer ver as publicações originais?</h2>
+
+                <p>
+                    Acesse o perfil oficial para consultar informações atualizadas
+                    diretamente com a PROESP.
+                </p>
+            </div>
+
+            <!-- Link para o Instagram oficial da associação -->
+            <a
+                class="button light"
+                href="https://www.instagram.com/proesp_campinas/"
+                target="_blank"
+                rel="noreferrer"
+            >
+                Acessar Instagram ↗️
+            </a>
+
+        </section>
+
+    </main>
+
+    <!-- RODAPÉ DO SITE -->
+    <!-- Contém a identificação da associação e links de navegação -->
+    <footer class="footer">
+
+        <!-- Logo e nome da PROESP no rodapé -->
+        <a class="brand footer-brand" href="index.html">
+            <img src="assets/logo-proesp.jpg" alt="">
+
+            <span>
+                PROESP
+                <small>Campinas · SP</small>
+            </span>
+        </a>
+
+        <!-- Nome completo da associação -->
+        <p>Associação Protetora da Diversidade das Espécies</p>
+
+        <!-- Links para outras páginas do site -->
+        <div class="footer-links">
+            <a href="index.html">Início</a>
+            <a href="sobre.html">Quem somos</a>
+            <a href="atuacao.html">Atuação</a>
+            <a href="contato.html">Contato</a>
+        </div>
+
+        <!-- Informação sobre a finalidade acadêmica do site -->
+        <small>
+            Site institucional demonstrativo desenvolvido para projeto acadêmico.
+        </small>
+
+    </footer>
+
+    <!-- Arquivo JavaScript responsável pelas funcionalidades interativas -->
+    <script src="script.js"></script>
+
+</body>
+</html>
